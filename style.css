@@ -1,0 +1,49 @@
+body {
+    background: #161616;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+h1 { margin-bottom: 20px; }
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.tool-group button {
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px 8px;
+    background: #222;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 5px;
+}
+
+.tool-group button.active {
+    border: 2px solid #0f0;
+}
+
+input[type="color"], input[type="range"], button {
+    margin: 5px;
+}
+
+canvas {
+    background: white;
+    border: 2px solid #444;
+    display: block;
+    margin: 0 auto;
+    touch-action: none;
+    cursor: crosshair;
+}
+
+@media (max-width: 768px) {
+    .tool-group button { font-size: 16px; padding: 4px 6px; }
+    input[type="color"], input[type="range"], button { margin: 3px; font-size: 14px; }
+}
